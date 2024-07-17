@@ -1,0 +1,36 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div id="product-details"></div>
+    <script>
+      const products = [
+        { id: 1, title: "kali biru", description: "Description for product 1" },
+        { id: 2, title: "Product 2", description: "Description for product 2" },
+        { id: 3, title: "Product 3", description: "Description for product 3" },
+        { id: 4, title: "Product 4", description: "Description for product 4" },
+        { id: 5, title: "Product 5", description: "Description for product 5" },
+      ];
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const productId = parseInt(urlParams.get("id"), 5);
+      const product = products.find((p) => p.id === productId);
+
+      if (product) {
+        document.getElementById("product-details").innerHTML = `
+          <h1>${product.title}</h1>
+          <p>${product.description}</p>
+          <a href="/">Back to home</a>
+        `;
+      } else {
+        document.getElementById("product-details").innerHTML =
+          "<p>Product not found</p>";
+      }
+    </script>
+  </body>
+</html> -->

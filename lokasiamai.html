@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lokasi Kali Biru</title>
+    <link rel="stylesheet" href="../src/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=averia-sans-libre:400|plus-jakarta-sans:200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+      :root {
+        --primary: #b6895b;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .text-primary {
+        color: var(--primary);
+      }
+
+      .bg-primary {
+        background-color: var(--primary);
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+      }
+
+      .map-container {
+        width: 100%;
+        height: 535px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+
+      .map-container iframe {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .contact-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      @media (min-width: 768px) {
+        .contact-container {
+          flex-direction: row;
+        }
+        .map-container {
+          width: 50%;
+        }
+        .form-container {
+          width: 50%;
+        }
+      }
+
+      form {
+        background-color: #222;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      form label {
+        display: block;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+
+      form input,
+      form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #555;
+        border-radius: 4px;
+        background-color: #333;
+        color: #fff;
+      }
+
+      form button {
+        background-color: var(--primary);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      form button:hover {
+        background-color: darken(var(--primary), 10%);
+      }
+    </style>
+  </head>
+  <body class="bg-black text-white">
+    <section id="contact" class="py-16">
+      <h2
+        class="text-white text-center max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
+      >
+        kunjungi Pantai
+        <span class="relative inline-block">
+          Amai
+          <div class="w-full h-3 -mt-3 bg-emerald-300"></div>
+        </span>
+      </h2>
+      <div class="container mx-auto px-4">
+        <div class="contact-container">
+          <div class="map-container bg-black rounded-lg shadow-lg">
+            <h2
+              class="text-white text-center max-w-lg mt-2 mb-3 text-lg font-semibold leading-none tracking-tight text-gray-900 sm:text-2xl md:text-3xl mx-auto"
+            >
+              Maps
+            </h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31889.75193293597!2d140.3348898582161!3d-2.4339098087660926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x686ce0c1f666eb97%3A0xd85f9554055348c!2sPantai%20Amai!5e0!3m2!1sid!2sid!4v1721130852608!5m2!1sid!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="form-container">
+            <h2
+              class="text-white text-center max-w-lg mb-6 text-lg font-semibold leading-none tracking-tight text-gray-900 sm:text-2xl md:text-3xl mx-auto"
+            >
+              Hubungi Kami
+            </h2>
+
+            <form action="">
+              <label for="number">Masukan No HP</label>
+              <input type="number" id="number" name="number" required />
+
+              <label for="email">Masukan Email</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="text">Kirim Pesan</label>
+              <textarea id="text" name="text" rows="5" required></textarea>
+
+              <button type="submit">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="grid grid-cols-2 gap-1">
+          <div class="text-center sm:text-left whitespace-nowrap">
+            <a
+              href="pantaiamai.html"
+              class="mx-1 px-5 py-4 cursor-pointer font-normal text-sm text-gray-100 focus:outline-none hover:text-gray-400 focus:text-gray-800"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-4 h-4 inline-block align-text-top"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                ></path>
+              </svg>
+              <span class="inline-block ml-1">Kembali</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

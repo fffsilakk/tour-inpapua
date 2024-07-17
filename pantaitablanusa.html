@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=averia-sans-libre:400|plus-jakarta-sans:200,300,400,500,600,700,800"
+      rel="stylesheet"
+    />
+  </head>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            averia: ["Averia Sans Libre"],
+            jakartasans: ["Plus Jakarta Sans"],
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-slate-700">
+    <section class="">
+    <div class=" p-8 lg:px-12 lg:py-24">
+        <div class="max-w-lg text-center sm:text-left">
+          <p
+            class="border-l-8 hidden max-w-md text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed"
+          >
+            Halaman ini belum dibuat/belum diselesaikan. Mohon Maaf atas
+            ketidaknyamananya.
+          </p>
+        </div>
+      </div>
+      <div class="pt-6">
+        <div class="grid grid-cols-2 gap-1">
+          <div class="text-center sm:text-left whitespace-nowrap">
+            <a
+              href="index.html"
+              class="mx-1 px-5 py-4 cursor-pointer font-normal text-sm text-gray-100 focus:outline-none hover:text-gray-400 focus:text-gray-800"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="w-4 h-4 inline-block align-text-top"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 19l-7-7m0 0l7-7m-7 7h18"
+                ></path>
+              </svg>
+              <span class="inline-block ml-1">Kembali ke Beranda</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>
